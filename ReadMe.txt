@@ -1,11 +1,10 @@
 
 
 I have done the analysis but it is using Spark and Python. I'll provide an explanation: 
-When I got the email from the recruiter I did not have access to the server where I had set up the data analysis environment. So I had to use my laptop had only 8 gb ram and runs Windows. The ecosystem is hard to intall on Windows. 
-So my initial idea was to use Pig for the analysis as I can just download the VM and start the assignment without fiddling with environment variables and installation procedures but limited ram posed to be a problem.
-As a final resort I found that I can just use 'pip install pyspark' and unpack Spark and make it run from python. It took a few minutes and ran smoothly.
+When I got the email from the recruiter I did not have access to the server where I had set up the data analysis environment. So my initial idea was to use Pig for the analysis as I can just download the VM and start the assignment without fiddling with environment variables and installation procedures but limited ram on my PC posed to be a problem.
+I found that I can install pyspark and Spark without needing a VM or anything and it ran without any hiccups.
 
-I am using Spark 2.2 and Python version 3.6.
+I am using Spark 2.2 and Python version 3.6. Due to limited RAM on my laptop, I am only sampling a small amount of data from the input file.
 
 SessionData folder should contain the input and the output folder will contain files related to the output.
 
