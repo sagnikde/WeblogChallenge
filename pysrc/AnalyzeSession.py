@@ -94,7 +94,7 @@ def findsessionstatistics(sessionwindowminutes):
     rdd = sc.textFile("file:///"+filepath+"/../SessionData/2015_07_22_mktplace_shop_web_log_sample.log").cache()
 
     # Let's take a small sample and run the tests, the actual data set will take too much time for part 3 (unique visits)
-    sampleddata = rdd.sample(True,0.002,5)
+    sampleddata = rdd.sample(True,0.01,5)
     #sampleddata = sc.parallelize(rdd.take(1000))
 
 
@@ -147,7 +147,7 @@ def findsessionstatistics(sessionwindowminutes):
     formattedipsession = ipsessions.map(lambda rawdata : (rawdata[0],str(rawdata[1]),rawdata[2]))
     formattedipsession.saveAsTextFile("file:///"+filepath+"/../output/ipsessions/ipsessions.log")
 
-    formattedsessioniphits = sessioniphits.map(lambda rawdata : (rawdata[0],str(rawdata[1]),rawdata[2]))
+    formattedsessioniphits = sessioniphits.map(lambda rawdata : (rawdata[0],str(rawdata[1]),rawdata[2],rawdata[3]))
     formattedsessioniphits.saveAsTextFile("file:///"+filepath+"/../output/uniquevisits/uniquevisits.log")
     
     print("#-------------------------------------------------------------------------------------#")
