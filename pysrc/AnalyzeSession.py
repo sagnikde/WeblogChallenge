@@ -5,7 +5,7 @@ import os
 import sys
 from datetime import datetime
 
-# Parses the RAW data
+# Parses the raw data
 def getipanddate(rawdata):
     allparts = rawdata.split(' ')
     dateandtime = datetime.strptime(allparts[0], "%Y-%m-%dT%H:%M:%S.%fZ")
@@ -64,7 +64,7 @@ def filteriphits(sessionandhits):
     for ipvisit in visits:
         ipadd = ipvisit[0]
         ipdatetime = ipvisit[1]
-         
+        # Check if it's inside the session in progress
         if(insidesessioninterval(sessionstart,sessionlength,ipdatetime)):
             ipdict[ipadd]=""
 
