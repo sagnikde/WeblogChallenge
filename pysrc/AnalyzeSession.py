@@ -110,6 +110,7 @@ def findsessionstatistics(sessionwindowminutes):
     # Average time
     
     sessioncount = ipsessions.map(lambda x : (1,x[2]))
+    # Add up the times
     totalsessionsandtimes = sessioncount.reduce(lambda a,b : (a[0]+b[0],a[1]+b[1]))
     averagetime = totalsessionsandtimes[1]/totalsessionsandtimes[0]
 
