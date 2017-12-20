@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalasrc.iml" filepath="$PROJECT_DIR$/.idea/modules/scalasrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scalasrc-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scalasrc-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sessionscala.iml" filepath="$PROJECT_DIR$/.idea/modules/sessionscala.iml" />
+    </modules>
+  </component>
+</project>
